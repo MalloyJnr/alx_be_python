@@ -12,4 +12,4 @@ match operation:
         if float(num2) == 0:
             print("cannot divide by zero.")
         else:
-            print(f"{num1} / {num2} = {float(num1) / float(num2)}")
+            print(f"{num1} / {num2} = {float(num1) / float(num2)}.")
