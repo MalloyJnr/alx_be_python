@@ -1,18 +1,4 @@
-def perform_operation(num1 , num2 , operation ):
-    """
-    Perform a basic arithmetic operation on two numbers.
-
-    Parameters:
-    num1 (float): The first number.
-    num2 (float): The second number.
-    operation (str): The operation to perform. Can be 'add', 'subtract', 'multiply', or 'divide'.
-
-    Returns:
-    float: The result of the arithmetic operation.
-
-    Raises:
-    ValueError: If an unsupported operation is provided or if division by zero is attempted.
-    """
+def perform_operation(num1, num2, operation):
     if operation == 'add':
         return num1 + num2
     elif operation == 'subtract':
