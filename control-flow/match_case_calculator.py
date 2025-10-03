@@ -1,6 +1,6 @@
-num1 = input("Enter first number: ")
-num2 = input("Enter second number: ")
-operation = input("Choose an operation (+, -, *, /): ").lower()
+num1 = input("Enter the first number: ")
+num2 = input("Enter the second number: ")
+operation = input("Choose the operation (+, -, *, /): ").lower()
 match operation:
     case "+":
         print(f"{num1} + {num2} = {float(num1) + float(num2)}")
