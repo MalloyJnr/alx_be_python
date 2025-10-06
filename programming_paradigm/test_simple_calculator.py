@@ -4,12 +4,19 @@ import unittest
 from simple_calculator import SimpleCalculator
 
 class TestSimpleCalculator(unittest.TestCase):
-    
+
     def setUp(self):
         """Initialize a SimpleCalculator instance before each test."""
         self.calc = SimpleCalculator()
 
-    # --- Addition Tests ---
+    # --- REQUIRED: General Addition Test (for tool compatibility) ---
+    def test_addition(self):
+        """Basic tests for the add method to satisfy required test name."""
+        self.assertEqual(self.calc.add(1, 2), 3)
+        self.assertEqual(self.calc.add(-1, 1), 0)
+        self.assertEqual(self.calc.add(0, 0), 0)
+
+    # --- Detailed Addition Tests ---
     def test_add_positive_numbers(self):
         self.assertEqual(self.calc.add(3, 5), 8)
 
