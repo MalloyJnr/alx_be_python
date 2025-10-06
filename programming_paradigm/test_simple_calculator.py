@@ -9,12 +9,17 @@ class TestSimpleCalculator(unittest.TestCase):
         """Initialize a SimpleCalculator instance before each test."""
         self.calc = SimpleCalculator()
 
-    # --- REQUIRED: General Addition Test (for tool compatibility) ---
+    # --- REQUIRED: General Addition Test ---
     def test_addition(self):
-        """Basic tests for the add method to satisfy required test name."""
         self.assertEqual(self.calc.add(1, 2), 3)
         self.assertEqual(self.calc.add(-1, 1), 0)
         self.assertEqual(self.calc.add(0, 0), 0)
+
+    # --- REQUIRED: General Subtraction Test ---
+    def test_subtraction(self):
+        self.assertEqual(self.calc.subtract(5, 3), 2)
+        self.assertEqual(self.calc.subtract(3, 5), -2)
+        self.assertEqual(self.calc.subtract(0, 0), 0)
 
     # --- Detailed Addition Tests ---
     def test_add_positive_numbers(self):
@@ -29,7 +34,7 @@ class TestSimpleCalculator(unittest.TestCase):
     def test_add_zero(self):
         self.assertEqual(self.calc.add(0, 7), 7)
 
-    # --- Subtraction Tests ---
+    # --- Detailed Subtraction Tests ---
     def test_subtract_positive_numbers(self):
         self.assertEqual(self.calc.subtract(10, 4), 6)
 
