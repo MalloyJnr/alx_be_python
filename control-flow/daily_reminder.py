@@ -39,6 +39,6 @@ while True:
     else:
         print("\nLet's try again.\n")
 
-# Display Reminder
+# Display Reminder (correct format)
 reminder = generate_reminder(task, priority, time_bound)
-print("\nReminder:", reminder)
+print(f"Reminder: {reminder}")
